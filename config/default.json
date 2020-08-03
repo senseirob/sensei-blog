@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://rstevenson542:rstevenson542@cluster0.d8puv.mongodb.net/SENSEI_BLOG_JULY?retryWrites=true&w=majority",
+  "jwtsecret": "mysecrettoken"
+}

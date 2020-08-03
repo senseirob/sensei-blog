@@ -1,0 +1,671 @@
+/* -----------------------------------------------Main.css-------------------------------------------- */
+/* --------------- Reset HTML ---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------- Navigation --------------- */
+
+.navigation {
+  background-color: black;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 1rem 2rem;
+  vertical-align: middle;
+}
+
+.navigation h4 {
+  color: white;
+  float: left;
+  font-size: 1.25rem;
+}
+
+.navigation ul {
+  float: right;
+}
+
+.navigation li {
+  color: white;
+  list-style: none;
+  float: left;
+  padding-left: 1.5rem;
+}
+
+.nav-bar-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar-right a {
+  text-decoration: none;
+  color: white;
+}
+
+/* --------------- Blog Banner --------------- */
+
+.blog_banner {
+  height: 10rem;
+  padding: 6rem 14rem;
+  /* line-height: 10rem; */
+  background: #f1f3f5;
+  text-align: center;
+  vertical-align: center;
+}
+
+.blog_banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.blog_banner p {
+  padding: 0rem 3rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+/* --------------- Blog Posts --------------- */
+
+.blog_section {
+  padding: 3rem 2rem 6rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  /* width: 100%; */
+}
+
+.blog_post {
+  /* width: 3rem; */
+  width: 100%;
+  background: #f2f3f4;
+  text-align: center;
+  height: 21rem;
+}
+
+.blog_post_image img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.blog_post_headline {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.blog_post a {
+  text-decoration: none;
+  color: black;
+}
+
+/* --------------- Try Us --------------- */
+
+.try_us {
+  background-color: black;
+  height: 12rem;
+  text-align: center;
+  padding: 5rem;
+}
+
+.try_us h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.try_us button {
+  margin-top: 2rem;
+  background-color: #fefefe;
+  padding: 24px 40px;
+  font-size: 0.8333 rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+}
+
+/* --------------- Footer --------------- */
+
+.footer {
+  height: 12rem;
+  text-align: center;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer_box {
+  text-align: left;
+}
+
+.footer_box h5 {
+  font-size: 1.1rem;
+  padding-bottom: 0.6rem;
+}
+
+.footer_box p {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}
+
+/* -----------------------------------------------Dashboard.css-------------------------------------------- */
+
+.dashboard-container {
+  padding: 3rem 5rem;
+  background-color: #fcf6f2;
+  min-height: 100%;
+  height: auto;
+  height: 50rem;
+}
+
+/* Header */
+
+.dashboard-header {
+  height: 4rem;
+  line-height: 3rem;
+  vertical-align: middle;
+}
+
+.header-left h1 {
+  font-size: 2rem;
+  float: left;
+}
+
+.header-right a {
+  float: right;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.header-right button {
+  float: right;
+  font-size: 1rem;
+  padding: 12px 30px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+}
+
+/* Main Table */
+
+#articles {
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+#articles td,
+#articles th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#articles tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#articles tr:nth-child(odd) {
+  background-color: white;
+}
+
+#articles tr:hover {
+  background-color: #ddd;
+}
+
+#articles th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+
+#articles a {
+  text-decoration: none;
+  color: black;
+}
+
+/* -----------------------------------------------Article.css-------------------------------------------- */
+
+.article-container {
+  height: 100%;
+  padding: 6rem 16rem 5rem 23rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.article-headline {
+  padding-bottom: 2rem;
+}
+
+.article-headline h1 {
+  font-size: 2.25rem;
+  line-height: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.article-headline h5 {
+  font-size: 1.25rem;
+}
+
+.article {
+  padding-top: 2rem;
+}
+
+.promotion-container {
+  padding: 2rem;
+  height: 300px;
+  border: 1px solid #d5dbdd;
+  border-radius: 3px;
+  box-shadow: 0 20px 30px rgba(7, 34, 48, 0.11);
+}
+
+.promotion-container h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.promotion-container p {
+  font-size: 1rem;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.blog-article {
+  padding: 0rem 4rem 0rem 4rem;
+}
+
+.blog-video {
+  width: 100%;
+  height: 30rem;
+}
+
+.article h5 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.article p {
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+
+.blog-comments {
+  padding-top: 2rem;
+}
+
+.free-trial button {
+  text-transform: uppercase;
+  margin: 1rem 0rem;
+  padding: 18px 10px;
+  font-color: white;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1768px) {
+  /* mobile phones and tablets */
+  /* display these styles when the screen size is less than 768px */
+  .article-container {
+    height: 100%;
+    padding: 4rem 3rem 5rem 11rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+/* -----------------------------------------------Login.css-------------------------------------------- */
+
+.login-container {
+  padding-top: 10rem;
+  background-image: url('/starry_sky.jpg');
+  height: 60rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box {
+  border: 1px solid white;
+  box-shadow: 0 10px 80px #000;
+  border-radius: 5px;
+  height: 29rem;
+  max-width: 400px;
+  margin: auto;
+  background: white;
+}
+
+.login-form {
+  height: 100%;
+}
+
+.login-headline {
+  background: black;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.login {
+  padding: 0rem 3.5rem;
+  text-transform: uppercase;
+}
+
+.login-email {
+  padding-top: 2rem;
+}
+
+input {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.5rem;
+  width: 98%;
+  border: 2px solid #ebeeef;
+}
+
+.login-label {
+  padding-top: 1rem;
+  font-size: 0.75rem;
+}
+
+.login-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.login-button button {
+  background: #2d99e2;
+  color: #fefefe;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 0.9rem;
+  border-radius: 4px;
+  border: none;
+}
+
+/* ---------------------------------------------- Create Article.css-------------------------------------------- */
+
+.blog-container {
+  padding: 3rem 5rem;
+  background-color: #fcf6f2;
+  min-height: 100%;
+  height: auto;
+  /* height: 70rem; */
+}
+
+.blog-section {
+  width: 100%;
+  padding: 1rem;
+}
+
+.ck-content {
+  height: 20rem;
+}
+
+.headline-section {
+  padding-bottom: 4rem;
+  line-height: 2 rem;
+}
+
+.headline-left {
+  float: left;
+}
+
+.headline-right button {
+  float: right;
+  background-color: white;
+  color: black;
+  padding: 0.75rem 3rem;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  /* font-size: 1.25rem; */
+  text-align: center;
+}
+
+.input_button {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+.blog-section h1 {
+  font-size: 1.5rem;
+}
+
+.blog-section-headline {
+  margin-right: none;
+  padding: none;
+  background: black;
+  width: 100%;
+  color: white;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.blog-section-body {
+  width: 100%;
+}
+
+.blog-section-body textarea {
+  width: 96.85%;
+  padding: 1rem;
+  height: 3rem;
+  font-size: 2rem;
+  border-top: none;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  resize: none;
+  line-height: 2rem;
+}
+
+.blog-section-headline h3 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding: 0.5rem;
+}
+
+#blog-body {
+  height: 10rem;
+}
+
+/*  */
+
+.blog-footer {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.edit-left {
+  float: left;
+  padding: 1rem;
+}
+
+.edit-left h3 {
+  font-size: 1.5rem;
+}
+
+.edit-left a {
+  text-decoration: none;
+  color: black;
+}
+
+.edit-right button {
+  float: right;
+  font-size: 1.25rem;
+  padding: 12px 30px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+}
+
+.edit-right button {
+  padding: 1rem 4rem;
+}
+
+@media (min-width: 1290px) {
+  .blog_container {
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .blog_section {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 3% 19%; */
+  }
+
+  .article-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .additional-container form {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* .additional-container { */
+/* width: 1200px;
+    min-height: 100%;
+    height: auto;
+    height: 70rem; */
+/* } */
+/* } */
